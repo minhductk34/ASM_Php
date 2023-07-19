@@ -1,0 +1,134 @@
+/* Khai báo font chữ Poppins từ Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Thiết lập biến cho các màu sắc */
+:root {
+  --main-color: #094627;
+  --color-grey: #808080;
+  --color-random: #e67330;
+}
+
+/* Thiết lập các thuộc tính cơ bản cho toàn bộ trang web */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Thiết lập font chữ cho body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Thiết lập định dạng cho header */
+header {
+  position: fixed;
+  background: #ffffff;
+  padding: 13px;
+  padding-left: 35px;
+  width: 100%;
+  height: 78px;
+  border-top: 8px solid var(--main-color);
+  box-shadow: 0px 0px 10px 0px var(--color-grey);
+}
+
+/* Thiết lập định dạng cho phần logo Starbucks */
+.left-area h1 {
+  color: var(--main-color);
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+/* Thiết lập định dạng cho nút logout và nút cart */
+.logout,
+.cart {
+  padding: 10px;
+  background: var(--main-color);
+  text-decoration: none;
+  float: right;
+  margin-top: -46px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Thiết lập định dạng cho nút logout và nút cart khi hover */
+.logout:hover,
+.cart:hover {
+  background: var(--color-random);
+}
+
+/* Thiết lập định dạng cho sidebar */
+.sidebar {
+  background: var(--main-color);
+  margin-top: 78px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+}
+
+/* Thiết lập định dạng cho ảnh đại diện trong sidebar */
+.sidebar .profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+/* Thiết lập định dạng cho phần tên người dùng trong sidebar */
+.sidebar h2 {
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+/* Thiết lập định dạng cho menu trong sidebar */
+.sidebar-menu {
+  margin-top: 1rem;
+}
+
+/* Thiết lập định dạng cho từng mục menu trong sidebar */
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 1.7rem;
+  padding-left: 1rem;
+}
+
+/* Thiết lập định dạng cho chữ trong mục menu */
+.sidebar-menu a {
+  padding-left: 30px;
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* Thiết lập định dạng cho mục menu đang được chọn */
+.sidebar-menu a.active {
+  background: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--main-color);
+  border-radius: 30px 0px 0px 30px;
+}
+
+/* Thiết lập định dạng cho phần icon trong mục menu */
+.sidebar-menu a span:first-child {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+.header{
+  display: flex;
+  justify-content: end;
+  padding: 0 30px;
+}
